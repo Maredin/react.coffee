@@ -1,6 +1,6 @@
 import Main from '../main/main';
 import Navigation from '../navigation/navigation';
-
+import Coffee from '../coffee/coffee';
 import Footer from '../footer/footer';
 
 
@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div className="App">
 			<Navigation/>
-			<Main />
+			<Coffee/>
 			<Footer/>
 		</div>
 	);

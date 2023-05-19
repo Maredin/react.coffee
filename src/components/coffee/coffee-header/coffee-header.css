@@ -1,0 +1,14 @@
+.coffee__header {
+    background-image: url(./img/coffee-bg.jpg);
+    width: 100%;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+.coffee__header h2 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    padding-top: 130px;
+}

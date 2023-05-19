@@ -1,6 +1,6 @@
 import Header from "../header/header"
-import About from "../about-us/about-us";
-import Best from "../best/best";
+import About from "./about-us/about-us";
+import Best from "./best/best";
 
 const Main = () => {
     return(
