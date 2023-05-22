@@ -1,0 +1,21 @@
+.aboutIt {
+    max-width: 875px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.aboutIt__descr {
+    padding-top: 25px;
+}
+.aboutIt__descr-item {
+    margin-top: 25px;
+    max-width: 420px;
+}
+.aboutIt__descr-item p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+}
