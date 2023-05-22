@@ -19,7 +19,7 @@ const Coffee = () => {
         <div className="coffee">
             <CoffeeHeader/>
             
-            <AboutIt/>
+            <FilterBlock/>
         </div>
     )
 }
