@@ -7,11 +7,24 @@ import AboutIt from "./about-it/about-it";
 
 
 class Coffee extends Component{
-
+    constructor(props) {
+        super(props);
+        this.state = {
+            coffeeClick: true
+        }   
+    }
+    onCoffeeTogle = () => {
+		this.setState({
+			wrapper: <Coffee 
+						coffeeClick={this.state.coffeeClick}
+						onCoffeeTogle={this.onCoffeeTogle}/>,
+			coffeeClick: false
+		})
+	}
     render() {
-        const {coffeeClick, onCoffeeTogle} = this.props;
+        
         const Wrapper = () => {
-            return(coffeeClick ? <FilterBlock/> : <AboutIt/>)
+            return(this.state.coffeeClick ? <FilterBlock/> : <AboutIt/>)
         }
 
         const FilterBlock = () => {
@@ -19,7 +32,7 @@ class Coffee extends Component{
                 <>
                     <Beans/>
                     <Filter/>
-                    <CoffeeCarts onCoffeeTogle={onCoffeeTogle}/>
+                    <CoffeeCarts onCoffeeTogle={this.onCoffeeTogle}/>
                 </>
             )
         } 
