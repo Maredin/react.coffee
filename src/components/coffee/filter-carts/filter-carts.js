@@ -7,9 +7,9 @@ const Filter = () => {
             <div className="filter__carts">
                 <p>Or filter</p>
                 <div className="filter__carts-btns">
-                    <buttuns className="filter__carts-btn">Brazil</buttuns>
-                    <buttuns className="filter__carts-btn">Kenya</buttuns>
-                    <buttuns className="filter__carts-btn">Columbia</buttuns>
+                    <button className="filter__carts-btn">Brazil</button>
+                    <button className="filter__carts-btn">Kenya</button>
+                    <button className="filter__carts-btn">Columbia</button>
                 </div>
             </div>
         </div>

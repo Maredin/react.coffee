@@ -6,11 +6,11 @@ class Navigation extends Component {
         const {onMain, onCoffee, onPlesure} = this.props;
         return (
             <div className="navigation">
-            <ul>
-                <li onClick={onMain}>Coffee house</li>
-                <li onClick={onCoffee}>Our coffee</li>
-                <li onClick={onPlesure}>For your pleasure</li>
-            </ul>
+                <ul>
+                    <li onClick={onMain}>Coffee house</li>
+                    <li onClick={onCoffee}>Our coffee</li>
+                    <li onClick={onPlesure}>For your pleasure</li>
+                </ul>
             </div>
         )
     }

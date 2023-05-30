@@ -16,10 +16,20 @@ class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			wrapper: <Main/>
+			wrapper: <Main/>,
+			coffeeClick: true
 		}
-	}
 
+	}
+	onCoffeeTogle = () => {
+		this.setState({
+			
+			wrapper: <Coffee 
+						coffeeClick={this.state.coffeeClick}
+						onCoffeeTogle={this.onCoffeeTogle}/>,
+			coffeeClick: false
+		})
+	}
 	onMain = () => {
 		this.setState({
 			wrapper: <Main/>
@@ -27,7 +37,8 @@ class App extends Component {
 	}
 	onCoffee = () => {
 		this.setState({
-			wrapper: <Coffee/>
+			wrapper: <Coffee coffeeClick={this.state.coffeeClick} onCoffeeTogle={this.onCoffeeTogle}/>,
+			coffeeClick: true
 		})
 	}
 	onPlesure = () => {
@@ -38,6 +49,13 @@ class App extends Component {
 
 
 	render() {	
+		const Main= () => {
+			return(
+				<>
+				{this.state.wrapper}
+				</>
+			)
+		}
 		return (
 			<div className="App">
 				<Navigation 
@@ -46,7 +64,7 @@ class App extends Component {
 					onMain={this.onMain}
 				/>
 				
-				{this.state.wrapper}
+				<Main/>
 				
 				<Footer
 					onCoffee={this.onCoffee}
