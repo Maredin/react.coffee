@@ -21,14 +21,21 @@ class App extends Component {
 
 	}
 
+
 	onMain = () => {
 		this.setState({
 			wrapper: <Main/>
 		})
 	}
 	onCoffee = () => {
+/* 		const {data, filter} = this.state
+		const visibleData = this.filterPost(data, filter); */
+
 		this.setState({
-			wrapper: <Coffee coffeeClick={this.state.coffeeClick}/>
+			wrapper: <Coffee
+/* 			onToggleFilter={this.onToggleFilter}
+			data={visibleData} */
+			/>
 		})
 	}
 	onPlesure = () => {
