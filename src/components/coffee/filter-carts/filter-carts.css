@@ -1,9 +1,12 @@
 .filter__carts {
     display: flex;
+    flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;
     gap: 35px;
     align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .filter__carts p{
     font-weight: 400;

@@ -1,6 +1,8 @@
 .best {
     margin-top: 110px;
     padding-top: 80px;
+    padding-left: 6%;
+    padding-right: 6%;
     padding-bottom: 110px;
     background-image: url(./img/best-bg.jpg);
 }

@@ -4,8 +4,11 @@
     max-width: 800px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 60px;
+    justify-content: center;
+    row-gap: 40px;
+    column-gap: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .coffee__cart {
     width: 220px;
